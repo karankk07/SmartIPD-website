@@ -12,6 +12,15 @@ import doctorWritingImg from './assets/doctor-writing.jpg'
 import operationalExcellenceImg from './assets/operational-excellence.jpg'
 import environmentalExcellenceImg from './assets/environmental-excellence.webp'
 import heroImage from './assets/hero-image.png'
+// Import images for the "Listen to their problems" section
+import kruthikaImg from './assets/kruthika.png'
+import manojImg from './assets/Manoj.png'
+import priyaImg from './assets/priya.webp'
+import vivekImg from './assets/Vivek.png'
+import sohailImg from './assets/sohail.jpg'
+import dheerajImg from './assets/dheeraj.jpg'
+// Import founder image
+import founderImg from './assets/founder.jpg'
 
 export default function Home() {
   const [floatingElements, setFloatingElements] = useState<Array<{x: number, y: number}>>([]);
@@ -36,13 +45,13 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 bg-white bg-opacity-90 shadow-sm z-50 py-4">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center">
-            <div className="text-2xl font-bold text-teal-600">Smart Paperless IPD</div>
+            <div className="text-2xl font-bold text-teal-600">Smart IPD</div>
             <div className="hidden md:flex space-x-8">
               <Link href="#solution" className="text-gray-700 hover:text-teal-600 transition-colors">Solution</Link>
               <Link href="#features" className="text-gray-700 hover:text-teal-600 transition-colors">Features</Link>
               <Link href="#impact" className="text-gray-700 hover:text-teal-600 transition-colors">Impact</Link>
               <Link href="#about" className="text-gray-700 hover:text-teal-600 transition-colors">About</Link>
-              <Link href="#contact" className="text-gray-700 hover:text-teal-600 transition-colors">Contact</Link>
+              <Link href="#contact" className="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition-colors">Contact</Link>
             </div>
             <div className="md:hidden">
               {/* Mobile menu button */}
@@ -62,7 +71,7 @@ export default function Home() {
                 <Link href="#features" className="text-gray-700 hover:text-teal-600 transition-colors" onClick={toggleMobileMenu}>Features</Link>
                 <Link href="#impact" className="text-gray-700 hover:text-teal-600 transition-colors" onClick={toggleMobileMenu}>Impact</Link>
                 <Link href="#about" className="text-gray-700 hover:text-teal-600 transition-colors" onClick={toggleMobileMenu}>About</Link>
-                <Link href="#contact" className="text-gray-700 hover:text-teal-600 transition-colors" onClick={toggleMobileMenu}>Contact</Link>
+                <Link href="#contact" className="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition-colors w-fit" onClick={toggleMobileMenu}>Contact</Link>
               </div>
             </div>
           )}
@@ -105,13 +114,13 @@ export default function Home() {
                 <Image 
                   src={heroImage}
                   alt="Doctor using Smart Paperless IPD"
-                  className="w-full h-auto rounded-lg shadow-xl"
+                  className="w-full h-auto rounded-lg"
                   priority
                 />
               </div>
               
-              {/* Floating stats cards */}
-              <div className="absolute top-1/4 -right-16 bg-white p-4 rounded-lg shadow-lg hidden md:block">
+              {/* Floating stats cards - increased z-index to appear above image */}
+              <div className="absolute top-1/4 -right-16 bg-white p-4 rounded-lg shadow-lg hidden md:block z-20">
                 <div className="text-center">
                   <div className="flex items-center justify-center mb-1">
                     <div className="flex -space-x-2">
@@ -125,7 +134,7 @@ export default function Home() {
                 </div>
               </div>
               
-              <div className="absolute bottom-1/4 -left-16 bg-white p-4 rounded-lg shadow-lg hidden md:block">
+              <div className="absolute bottom-1/4 -left-16 bg-white p-4 rounded-lg shadow-lg hidden md:block z-20">
                 <div className="text-center">
                   <p className="font-bold text-xl text-blue-600">+12</p>
                   <p className="text-sm">Patients Discharged</p>
@@ -278,22 +287,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Problems Section */}
+      {/* Problems Section - Updated with real images and adjusted layout */}
       <section className="py-20 bg-blue-50">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-6 md:px-12">
           <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">
             Listen to their problems.
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
             {/* Card 1 - Nurse */}
-            <div className="bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow">
-              <div className="flex items-center mb-4">
-                <div className="w-14 h-14 rounded-full overflow-hidden mr-4 flex-shrink-0 bg-blue-100">
-                  {/* Use a placeholder div instead of Image for now */}
-                  <div className="w-full h-full bg-blue-200 flex items-center justify-center">
-                    <span className="text-blue-600 font-bold">KN</span>
-                  </div>
+            <div className="bg-white rounded-xl shadow-sm p-8 hover:shadow-md transition-shadow transform md:translate-y-0">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 rounded-full overflow-hidden mr-4 flex-shrink-0">
+                  <Image 
+                    src={kruthikaImg}
+                    alt="Kruthika"
+                    width={64}
+                    height={64}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">Kruthika</h3>
@@ -306,12 +318,16 @@ export default function Home() {
             </div>
 
             {/* Card 2 - Doctor */}
-            <div className="bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow">
-              <div className="flex items-center mb-4">
-                <div className="w-14 h-14 rounded-full overflow-hidden mr-4 flex-shrink-0 bg-green-100">
-                  <div className="w-full h-full bg-green-200 flex items-center justify-center">
-                    <span className="text-green-600 font-bold">MK</span>
-                  </div>
+            <div className="bg-white rounded-xl shadow-sm p-8 hover:shadow-md transition-shadow transform md:translate-y-6">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 rounded-full overflow-hidden mr-4 flex-shrink-0">
+                  <Image 
+                    src={manojImg}
+                    alt="Dr. Manoj K"
+                    width={64}
+                    height={64}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">Dr. Manoj K</h3>
@@ -324,12 +340,16 @@ export default function Home() {
             </div>
 
             {/* Card 3 - Medical Records Officer */}
-            <div className="bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow">
-              <div className="flex items-center mb-4">
-                <div className="w-14 h-14 rounded-full overflow-hidden mr-4 flex-shrink-0 bg-purple-100">
-                  <div className="w-full h-full bg-purple-200 flex items-center justify-center">
-                    <span className="text-purple-600 font-bold">PS</span>
-                  </div>
+            <div className="bg-white rounded-xl shadow-sm p-8 hover:shadow-md transition-shadow transform md:translate-y-0">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 rounded-full overflow-hidden mr-4 flex-shrink-0">
+                  <Image 
+                    src={priyaImg}
+                    alt="Priya Sharma"
+                    width={64}
+                    height={64}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">Priya Sharma</h3>
@@ -342,12 +362,16 @@ export default function Home() {
             </div>
 
             {/* Card 4 - Hospital Administrator */}
-            <div className="bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow">
-              <div className="flex items-center mb-4">
-                <div className="w-14 h-14 rounded-full overflow-hidden mr-4 flex-shrink-0 bg-yellow-100">
-                  <div className="w-full h-full bg-yellow-200 flex items-center justify-center">
-                    <span className="text-yellow-600 font-bold">VS</span>
-                  </div>
+            <div className="bg-white rounded-xl shadow-sm p-8 hover:shadow-md transition-shadow transform md:translate-y-4">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 rounded-full overflow-hidden mr-4 flex-shrink-0">
+                  <Image 
+                    src={vivekImg}
+                    alt="Vivek Singh"
+                    width={64}
+                    height={64}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">Vivek Singh</h3>
@@ -360,12 +384,16 @@ export default function Home() {
             </div>
 
             {/* Card 5 - Billing Coordinator */}
-            <div className="bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow">
-              <div className="flex items-center mb-4">
-                <div className="w-14 h-14 rounded-full overflow-hidden mr-4 flex-shrink-0 bg-red-100">
-                  <div className="w-full h-full bg-red-200 flex items-center justify-center">
-                    <span className="text-red-600 font-bold">MS</span>
-                  </div>
+            <div className="bg-white rounded-xl shadow-sm p-8 hover:shadow-md transition-shadow transform md:translate-y-10">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 rounded-full overflow-hidden mr-4 flex-shrink-0">
+                  <Image 
+                    src={sohailImg}
+                    alt="Md. Sohail"
+                    width={64}
+                    height={64}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">Md. Sohail</h3>
@@ -378,12 +406,16 @@ export default function Home() {
             </div>
 
             {/* Card 6 - Quality Assurance Manager */}
-            <div className="bg-white rounded-xl shadow-sm p-6 hover:shadow-md transition-shadow">
-              <div className="flex items-center mb-4">
-                <div className="w-14 h-14 rounded-full overflow-hidden mr-4 flex-shrink-0 bg-indigo-100">
-                  <div className="w-full h-full bg-indigo-200 flex items-center justify-center">
-                    <span className="text-indigo-600 font-bold">DR</span>
-                  </div>
+            <div className="bg-white rounded-xl shadow-sm p-8 hover:shadow-md transition-shadow transform md:translate-y-4">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 rounded-full overflow-hidden mr-4 flex-shrink-0">
+                  <Image 
+                    src={dheerajImg}
+                    alt="Dheeraj R"
+                    width={64}
+                    height={64}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900">Dheeraj R</h3>
@@ -603,24 +635,45 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Us Section */}
+      {/* About Us Section - Updated with founder image */}
       <section id="about" className="py-20 bg-blue-100">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-10">
             About US
           </h2>
           <div className="max-w-4xl mx-auto text-center">
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-10">
               We are a team of engineers and doctors dreaming to revolutionize Indian Healthcare.
               Having seen the inefficiencies and chaos in the most critical aspects of the hospital, we want
-              to help hospitals care their patients better. "Equip our hospitals and clinicians with the best the
-              technology can offer, so that they can give their best to care those in need" is our motto.
+              to help hospitals care their patients better.
+              <br /><br />
+              "Equip our hospitals and clinicians with the best the technology can offer, so that they can give their best to care those in need" is our motto.
             </p>
+            
+            {/* Founder section */}
+            <div className="flex items-center justify-center">
+              {/* Image */}
+              <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
+                <Image 
+                  src={founderImg}
+                  alt="Karan K K"
+                  width={64}
+                  height={64}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Text */}
+              <div className="text-left">
+                <h3 className="text-xl font-semibold text-gray-900">Karan K K</h3>
+                <p className="text-gray-600">Founder</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* Contact Section - Updated button color */}
       <section id="contact" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">
@@ -693,7 +746,7 @@ export default function Home() {
               <div>
                 <button
                   type="submit"
-                  className="w-full py-3 px-6 bg-gray-900 text-white font-medium rounded-md hover:bg-gray-800 transition-colors duration-200"
+                  className="w-full py-3 px-6 bg-teal-600 text-white font-medium rounded-md hover:bg-teal-700 transition-colors duration-200"
                 >
                   Submit
                 </button>
