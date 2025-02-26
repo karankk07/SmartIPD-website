@@ -448,7 +448,7 @@ export default function Home() {
           <div className="max-w-4xl mx-auto aspect-video relative">
             <iframe 
               className="w-full h-full rounded-lg shadow-lg"
-              src="https://www.youtube.com/embed/U2SVCCENLjE?si=bIPeuqzH5apFowzc" 
+              src="https://www.youtube.com/embed/fmA5kXyjbEI?si=A2BlM1lfEekjW_MG" 
               title="YouTube video player" 
               frameBorder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
