@@ -49,9 +49,8 @@ export default function Home() {
             <div className="hidden md:flex space-x-8">
               <Link href="#solution" className="text-gray-700 hover:text-teal-600 transition-colors">Solution</Link>
               <Link href="#features" className="text-gray-700 hover:text-teal-600 transition-colors">Features</Link>
-              <Link href="#impact" className="text-gray-700 hover:text-teal-600 transition-colors">Impact</Link>
-              <Link href="#about" className="text-gray-700 hover:text-teal-600 transition-colors">About</Link>
-              <Link href="#contact" className="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition-colors">Contact</Link>
+              <Link href="/environmental-impact" className="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition-colors">Case Study</Link>
+              <Link href="#contact" className="text-gray-700 hover:text-teal-600 transition-colors">Contact</Link>
             </div>
             <div className="md:hidden">
               {/* Mobile menu button */}
@@ -69,9 +68,8 @@ export default function Home() {
               <div className="flex flex-col space-y-4">
                 <Link href="#solution" className="text-gray-700 hover:text-teal-600 transition-colors" onClick={toggleMobileMenu}>Solution</Link>
                 <Link href="#features" className="text-gray-700 hover:text-teal-600 transition-colors" onClick={toggleMobileMenu}>Features</Link>
-                <Link href="#impact" className="text-gray-700 hover:text-teal-600 transition-colors" onClick={toggleMobileMenu}>Impact</Link>
-                <Link href="#about" className="text-gray-700 hover:text-teal-600 transition-colors" onClick={toggleMobileMenu}>About</Link>
-                <Link href="#contact" className="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition-colors w-fit" onClick={toggleMobileMenu}>Contact</Link>
+                <Link href="/environmental-impact" className="text-gray-700 hover:text-teal-600 transition-colors" onClick={toggleMobileMenu}>Case Study</Link>
+                <Link href="#contact" className="text-gray-700 hover:text-teal-600 transition-colors" onClick={toggleMobileMenu}>Contact</Link>
               </div>
             </div>
           )}
@@ -228,7 +226,7 @@ export default function Home() {
                   Paper Costs More Than You Think
                 </p>
                 <p className="text-gray-700 mb-4">
-                  A typical <strong>100-bed hospital wastes ₹20+ lakhs yearly</strong> on paper operations.
+                  A typical <strong>100-bed hospital wastes ₹10+ lakhs yearly</strong> on paper operations.
                 </p>
                 <ul className="text-gray-700 space-y-2">
                   <li className="flex items-start">
@@ -475,7 +473,7 @@ export default function Home() {
               <div className="text-8xl font-bold text-gray-100 absolute top-4 left-4">01</div>
               <div className="relative z-10">
                 <div className="w-16 h-16 mb-6">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-full h-full text-blue-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="teal" className="w-full h-full text-blue-600">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
                   </svg>
                 </div>
@@ -491,7 +489,7 @@ export default function Home() {
               <div className="text-8xl font-bold text-gray-100 absolute top-4 left-4">02</div>
               <div className="relative z-10">
                 <div className="w-16 h-16 mb-6">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-full h-full text-blue-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="teal" className="w-full h-full text-blue-600">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
                   </svg>
                 </div>
@@ -507,7 +505,7 @@ export default function Home() {
               <div className="text-8xl font-bold text-gray-100 absolute top-4 left-4">03</div>
               <div className="relative z-10">
                 <div className="w-16 h-16 mb-6">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-full h-full text-blue-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="teal" className="w-full h-full text-blue-600">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 00-1.883 2.542l.857 6a2.25 2.25 0 002.227 1.932H19.05a2.25 2.25 0 002.227-1.932l.857-6a2.25 2.25 0 00-1.883-2.542m-16.5 0V6A2.25 2.25 0 016 3.75h3.879a1.5 1.5 0 011.06.44l2.122 2.12a1.5 1.5 0 001.06.44H18A2.25 2.25 0 0120.25 9v.776" />
                   </svg>
                 </div>
@@ -523,7 +521,7 @@ export default function Home() {
               <div className="text-8xl font-bold text-gray-100 absolute top-4 left-4">04</div>
               <div className="relative z-10">
                 <div className="w-16 h-16 mb-6">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-full h-full text-blue-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="teal" className="w-full h-full text-blue-600">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z" />
                   </svg>
                 </div>
@@ -539,7 +537,7 @@ export default function Home() {
               <div className="text-8xl font-bold text-gray-100 absolute top-4 left-4">05</div>
               <div className="relative z-10">
                 <div className="w-16 h-16 mb-6">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-full h-full text-blue-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="teal" className="w-full h-full text-blue-600">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
                   </svg>
                 </div>
@@ -555,7 +553,7 @@ export default function Home() {
               <div className="text-8xl font-bold text-gray-100 absolute top-4 left-4">06</div>
               <div className="relative z-10">
                 <div className="w-16 h-16 mb-6">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-full h-full text-blue-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="teal" className="w-full h-full text-blue-600">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
                   </svg>
                 </div>
@@ -643,7 +641,7 @@ export default function Home() {
           </h2>
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-10">
-              We are a team of engineers and doctors dreaming to revolutionize Indian Healthcare.
+              We are a team of engineers and doctors working to revolutionize Indian Healthcare.
               Having seen the inefficiencies and chaos in the most critical aspects of the hospital, we want
               to help hospitals care their patients better.
               <br /><br />
@@ -676,82 +674,120 @@ export default function Home() {
       {/* Contact Section - Updated button color */}
       <section id="contact" className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-8">
             Contact
           </h2>
           
-          <div className="max-w-2xl mx-auto">
-            <form 
-              action="https://formspree.io/f/mpwqgeae" 
-              method="POST"
-              className="space-y-8"
-            >
-              {/* Hidden Subject Field */}
-              <input type="hidden" name="_subject" value="New contact from Paperless IPD Website" />
-              
-              {/* Honeypot field to prevent spam */}
-              <input type="text" name="_gotcha" className="hidden" />
-              
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="Dr. Vishal Kulkarni"
-                />
+          <div className="flex flex-col md:flex-row md:space-x-12 max-w-6xl mx-auto mb-16">
+            {/* Contact Info Card */}
+            <div className="w-full md:w-1/3 mb-10 md:mb-0">
+              <div className="bg-gray-50 p-8 rounded-xl shadow-sm h-full">
+                <h3 className="text-2xl font-bold text-teal-600 mb-6">Get in Touch</h3>
+                
+                <div className="space-y-6">
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 h-10 w-10 rounded-full bg-teal-100 flex items-center justify-center mr-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="text-sm font-medium text-gray-500 mb-1">Phone</p>
+                      <a href="tel:+918660228496" className="text-lg font-medium text-gray-800 hover:text-teal-600 transition-colors">+91 8660228496</a>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 h-10 w-10 rounded-full bg-teal-100 flex items-center justify-center mr-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-teal-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="text-sm font-medium text-gray-500 mb-1">Email</p>
+                      <a href="mailto:karankorlahalli777@gmail.com" className="text-lg font-medium text-gray-800 hover:text-teal-600 transition-colors break-words">karankorlahalli777@gmail.com</a>
+                    </div>
+                  </div>
+                </div>
               </div>
-              
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  required
-                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="9999999999"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="_replyto"
-                  required
-                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="your@email.com"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={6}
-                  required
-                  className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="Your message..."
-                ></textarea>
-              </div>
-              
-              {/* Redirect after submission */}
-              <input type="hidden" name="_next" value="/thank-you" />
-              
-              <div>
-                <button
-                  type="submit"
-                  className="w-full py-3 px-6 bg-teal-600 text-white font-medium rounded-md hover:bg-teal-700 transition-colors duration-200"
-                >
-                  Submit
-                </button>
-              </div>
-            </form>
+            </div>
+            
+            {/* Contact Form */}
+            <div className="w-full md:w-2/3">
+              <form 
+                action="https://formspree.io/f/mpwqgeae" 
+                method="POST"
+                className="space-y-6"
+              >
+                {/* Hidden Subject Field */}
+                <input type="hidden" name="_subject" value="New contact from Paperless IPD Website" />
+                
+                {/* Honeypot field to prevent spam */}
+                <input type="text" name="_gotcha" className="hidden" />
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                      placeholder="Dr. Vishal Kulkarni"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      required
+                      className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                      placeholder="9999999999"
+                    />
+                  </div>
+                </div>
+                
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="_replyto"
+                    required
+                    className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                    placeholder="your@email.com"
+                  />
+                </div>
+                
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows={5}
+                    required
+                    className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                    placeholder="Your message..."
+                  ></textarea>
+                </div>
+                
+                {/* Redirect after submission */}
+                <input type="hidden" name="_next" value="/thank-you" />
+                
+                <div>
+                  <button
+                    type="submit"
+                    className="w-full py-3 px-6 bg-teal-600 text-white font-medium rounded-md hover:bg-teal-700 transition-colors duration-200"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>

@@ -71,12 +71,17 @@ module.exports = {
           "0%, 100%": { transform: "translate(0, 0)" },
           "50%": { transform: "translate(30px, -30px)" },
         },
+        "pulse-slow": {
+          "0%, 100%": { opacity: 0.5 },
+          "50%": { opacity: 0.8 },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.8s ease-out forwards",
         "float": "float 10s ease-in-out infinite",
+        "pulse-slow": "pulse-slow 4s ease-in-out infinite",
       },
     },
   },
